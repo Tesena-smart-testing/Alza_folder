@@ -3,12 +3,31 @@ class MainScreenObject {
     return $(`android=new UiSelector().resourceId("${resourceId}")`);
   }
 
-  get skipAndContinueBtn() {
-    return this.getElementByResourceId("IntroLoginSkipButton");
+  get searachField() {
+    return this.getElementByResourceId("SearchField");
   }
 
-  async clickOnSkipBtn() {
-    await this.skipAndContinueBtn.click();
+  get computerAndLaptopsSection() {
+    const computerSectionElement = $(
+      `//*[contains(@text, "Computers and Laptops")]`
+    );
+    return computerSectionElement;
+  }
+
+  get productCard() {
+    return this.getElementByResourceId("CatalogProduct");
+  }
+
+  get productVariantsDetail() {
+    return this.getElementByResourceId("ProductDetailVariantsCard");
+  }
+
+  async clickOnSearchField() {
+    await this.searachField.click();
+  }
+
+  async clickOnProductCard() {
+    await this.productCard.click();
   }
 }
 
