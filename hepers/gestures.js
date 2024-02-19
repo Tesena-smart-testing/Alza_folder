@@ -9,16 +9,16 @@
 let SCREEN_SIZE;
 const SWIPE_DIRECTION = {
   down: {
-    start: { x: 50, y: 15 },
-    end: { x: 50, y: 85 },
+    start: { x: 50, y: 25 }, // Start a bit lower
+    end: { x: 50, y: 90 },
   },
   left: {
     start: { x: 95, y: 50 },
     end: { x: 5, y: 50 },
   },
   right: {
-    start: { x: 5, y: 50 },
-    end: { x: 95, y: 50 },
+    start: { x: 5, y: 80 },
+    end: { x: 95, y: 80 },
   },
   up: {
     start: { x: 50, y: 85 },
